@@ -95,7 +95,11 @@
   },
   {
     "inputs": [
-      { "internalType": "bytes32", "name": "eventId", "type": "bytes32" }
+      {
+        "internalType": "bytes32",
+        "name": "eventId",
+        "type": "bytes32"
+      }
     ],
     "name": "confirmAllAttendees",
     "outputs": [],
@@ -104,8 +108,16 @@
   },
   {
     "inputs": [
-      { "internalType": "bytes32", "name": "eventId", "type": "bytes32" },
-      { "internalType": "address", "name": "attendee", "type": "address" }
+      {
+        "internalType": "bytes32",
+        "name": "eventId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "address",
+        "name": "attendee",
+        "type": "address"
+      }
     ],
     "name": "confirmAttendee",
     "outputs": [],
@@ -119,9 +131,21 @@
         "name": "eventTimestamp",
         "type": "uint256"
       },
-      { "internalType": "uint256", "name": "deposit", "type": "uint256" },
-      { "internalType": "uint256", "name": "maxCapacity", "type": "uint256" },
-      { "internalType": "string", "name": "eventDataCID", "type": "string" }
+      {
+        "internalType": "uint256",
+        "name": "deposit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxCapacity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "eventDataCID",
+        "type": "string"
+      }
     ],
     "name": "createNewEvent",
     "outputs": [],
@@ -130,7 +154,11 @@
   },
   {
     "inputs": [
-      { "internalType": "bytes32", "name": "eventId", "type": "bytes32" }
+      {
+        "internalType": "bytes32",
+        "name": "eventId",
+        "type": "bytes32"
+      }
     ],
     "name": "createNewRSVP",
     "outputs": [],
@@ -138,27 +166,61 @@
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
     "name": "idToEvent",
     "outputs": [
-      { "internalType": "bytes32", "name": "eventId", "type": "bytes32" },
-      { "internalType": "string", "name": "eventDataCID", "type": "string" },
-      { "internalType": "address", "name": "eventOwner", "type": "address" },
+      {
+        "internalType": "bytes32",
+        "name": "eventId",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "string",
+        "name": "eventDataCID",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "eventOwner",
+        "type": "address"
+      },
       {
         "internalType": "uint256",
         "name": "eventTimestamp",
         "type": "uint256"
       },
-      { "internalType": "uint256", "name": "deposit", "type": "uint256" },
-      { "internalType": "uint256", "name": "maxCapacity", "type": "uint256" },
-      { "internalType": "bool", "name": "paidOut", "type": "bool" }
+      {
+        "internalType": "uint256",
+        "name": "deposit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "maxCapacity",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "paidOut",
+        "type": "bool"
+      }
     ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "bytes32", "name": "eventId", "type": "bytes32" }
+      {
+        "internalType": "bytes32",
+        "name": "eventId",
+        "type": "bytes32"
+      }
     ],
     "name": "withdrawUnclaimedDeposits",
     "outputs": [],
